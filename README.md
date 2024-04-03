@@ -66,7 +66,7 @@ Proje iki zorluk aşamalı,
 	- `axios`
 	- `react-strap`
 	- `toastify`
-	- `tailwindcss`
+	- `tailwindcss` (düz css oturduysa)
 	- `cypress.io` v.b.
 
 ### Görev 2: Iterasyon 1 - (IT1) Proje Planını, UI Tasarımı ve Diğer Tasarım Öğelerini İncelemek
