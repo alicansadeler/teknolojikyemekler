@@ -33,16 +33,17 @@ A((Anasayfa)) -->B([Sipariş Ver Butonu]) --> C[Sipariş Formu] -->Z((Sipariş O
 #### Sipariş Formu Veri Akışı
 
 ```mermaid
-graph LR
-A((Etkileşim)) --e.target.data-->  F[(Form Data)]
-F--> V{Form Validation}
-V--Hatalı-->H[Hata Ekle]
-V--Hatasız-->S[Hata Sil]
+graph TB
+A((User Event)) --e.target.data--> V{does Field has errors?}
+A--e.target.data-->G[Update Form State]-->F[(Form Data State)]
+V--has error-->H[Add Error]
+V--no error-->S[Remove Error]
+H-->E[(Form Errors State)]
 S-->E
-H-->E[(Form Errors)]
-E-->I{isValid}
-I--false, Gönder Butonunu Pasifleştir-->A
-I--true-->Z((Submit))
+E--> I{is Form valid?}
+Z((Submit))
+I--false-->B[Disable Submit]-->Z
+I--true-->C[Enable Submit]-->Z
 ```
 
 ## Talimatlar
