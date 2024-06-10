@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+.headerorder-container {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: red;
+}
+
+.nav-container {
+  list-style-type: none;
+}
