@@ -9,7 +9,7 @@ export default function Home() {
       <div className="home-container">
         <div className="home-item0">
           <img
-            src="/public/home-banner.png"
+            src={"/home-banner.png"}
             alt="Home Banner"
             className="home-item1"
           />
