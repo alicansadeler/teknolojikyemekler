@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { HomeLink } from "./HomeLink";
 import React from "react";
 import { HomePage } from "./HomePage";
-import homeBanner from "./Assets/mile1-assets/home-banner.png";
+import homeBanner from "/Assets/mile1-assets/home-banner.png";
 
 export default function Home() {
   return (
