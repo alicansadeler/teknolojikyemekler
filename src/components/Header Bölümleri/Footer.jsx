@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import logoFooter from "../../../Assets/mile2-aseets/footer/logoFooter.svg";
 
 export function Footer({ showFooter, setShowFooter }) {
   const location = useLocation();
@@ -17,29 +16,20 @@ export function Footer({ showFooter, setShowFooter }) {
       {showFooter && (
         <div className="footer-container">
           <div>
-            <img src={logoFooter} alt="Banner" className="home-item1" />
+            <img src={"/logoFooter.svg"} alt="Banner" className="home-item1" />
             <div className="footerItem-container">
               <div className="footer-item1">
-                <img
-                  src="Assets/mile2-aseets/footer/icons/icon-1.png"
-                  alt="İcon1"
-                />
+                <img src={"/icon-1.png"} alt="İcon1" />
                 <p style={{ lineHeight: "1.5rem" }}>
                   341 Londonderry Road, <br /> Istanbul Türkiye
                 </p>
               </div>
               <div className="footer-item1">
-                <img
-                  src="Assets/mile2-aseets/footer/icons/icon-2.png"
-                  alt="İcon2"
-                />
+                <img src={"/icon-2.png"} alt="İcon2" />
                 <p>aciktim@teknolojikyemekler.com</p>
               </div>
               <div className="footer-item1">
-                <img
-                  src="Assets/mile2-aseets/footer/icons/icon-3.png"
-                  alt="İcon3"
-                />
+                <img src={"/icon-3.png"} alt="İcon3" />
                 <p>+90 216 123 45 67</p>
               </div>
             </div>
@@ -57,36 +47,12 @@ export function Footer({ showFooter, setShowFooter }) {
             <div className="footer-item3">
               <h4>Instragram</h4>
               <div className="footer-item4">
-                <img
-                  src="Assets/mile2-aseets/footer/insta/li-0.png"
-                  alt="Insta0"
-                  className="footer-item5"
-                />
-                <img
-                  src="Assets/mile2-aseets/footer/insta/li-1.png"
-                  alt="Insta1"
-                  className="footer-item5"
-                />
-                <img
-                  src="Assets/mile2-aseets/footer/insta/li-2.png"
-                  alt="Insta2"
-                  className="footer-item5"
-                />
-                <img
-                  src="Assets/mile2-aseets/footer/insta/li-3.png"
-                  alt="Insta3"
-                  className="footer-item5"
-                />
-                <img
-                  src="Assets/mile2-aseets/footer/insta/li-4.png"
-                  alt="Insta4"
-                  className="footer-item5"
-                />
-                <img
-                  src="Assets/mile2-aseets/footer/insta/li-5.png"
-                  alt="Insta5"
-                  className="footer-item5"
-                />
+                <img src={"/li-0.png"} alt="Insta0" className="footer-item5" />
+                <img src={"/li-1.png"} alt="Insta1" className="footer-item5" />
+                <img src={"/li-2.png"} alt="Insta2" className="footer-item5" />
+                <img src={"/li-3.png"} alt="Insta3" className="footer-item5" />
+                <img src={"/li-4.png"} alt="Insta4" className="footer-item5" />
+                <img src={"/li-5.png"} alt="Insta5" className="footer-item5" />
               </div>
             </div>
           </div>
